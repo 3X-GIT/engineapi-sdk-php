@@ -1,0 +1,7 @@
+# Artefatos de build/teste locais (gerados por `composer install`/`phpunit`).
+# Pacote-biblioteca: quem consome via Packagist resolve as próprias versões,
+# então `composer.lock` também não é commitado aqui (mesmo motivo do
+# `node_modules/`/`package-lock.json` só no nível de app, não de lib).
+vendor/
+composer.lock
+.phpunit.result.cache

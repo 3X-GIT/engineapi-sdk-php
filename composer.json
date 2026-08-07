@@ -1,0 +1,38 @@
+{
+  "name": "engineapi/sdk",
+  "description": "SDK PHP oficial da Engine API — emissão fiscal (NFe, NFCe, NFSe) via SEFAZ, com tratamento de erro previsível",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["nfe", "nfce", "nfse", "fiscal", "sefaz", "nota-fiscal", "danfe"],
+  "require": {
+    "php": ">=8.1",
+    "guzzlehttp/guzzle": "^7.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "EngineApi\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "EngineApi\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "3X Tecnologia",
+      "email": "contato@3xtec.com.br"
+    }
+  ],
+  "minimum-stability": "stable",
+  "homepage": "https://docs.engineapi.com.br/sdks/php",
+  "support": {
+    "docs": "https://docs.engineapi.com.br",
+    "issues": "https://github.com/3X-GIT/engineapi-sdk-php/issues",
+    "source": "https://github.com/3X-GIT/engineapi-sdk-php",
+    "email": "contato@3xtec.com.br"
+  }
+}
