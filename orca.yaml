@@ -1,0 +1,11 @@
+# Ganchos de worktree da casa 3X (JOT-1336 item 23). Fonte: 3x-agentes/banco/maquina/README.md, "Ganchos do Orca".
+# O Orca usa esta seção quando o repo não tem comando local na máquina, ou quando
+# Settings → Repository → Hooks → Command source está em "orca.yaml only".
+# setup: dependências, pré-confiança do agente e .rascunho/ fora do commit.
+# archive: a via única preserva tudo no GitHub (PR ou preserva/<nome>-<AAMMDD>) antes de o Orca remover; rc != 0 barra a remoção.
+scripts:
+  setup: |
+    bash "$HOME/Work/3x-agentes/banco/maquina/orca-worktree-setup.sh"
+  archive: |
+    bash "$HOME/Work/arquiteto-claude/scripts/preserva-e-remove.sh" --gancho "$ORCA_WORKTREE_PATH"
+setupAgentStartupPolicy: wait-for-setup
