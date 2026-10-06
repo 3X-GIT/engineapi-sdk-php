@@ -7,5 +7,5 @@ scripts:
   setup: |
     bash "$HOME/Work/3x-agentes/banco/maquina/orca-worktree-setup.sh"
   archive: |
-    bash "$HOME/Work/arquiteto-claude/scripts/preserva-e-remove.sh" --gancho "$ORCA_WORKTREE_PATH"
+    bash "$HOME/Work/3x-agentes/banco/maquina/preserva-e-remove.sh" --gancho "$ORCA_WORKTREE_PATH"
 setupAgentStartupPolicy: wait-for-setup
